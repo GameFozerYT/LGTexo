@@ -35,7 +35,7 @@ var ti={}
 
 client.on('ready', function(){
     var ms = 60000 ;
-    var setGame = ['By Texo','Type By Texp'];
+    var setGame = ['By Texo','By Texo'];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -226,7 +226,7 @@ message.channel.send(`**${message.author.username}, your :credit_card: balance i
 });
 
 client.on('message', async message => {
-    let amount = 2500000000;
+    let amount = 250;
     if(message.content.startsWith(prefix + "daily")) {
     if(message.author.bot) return;
     if(coolDown.has(message.author.id)) return message.channel.send(`**:stopwatch: | ${message.author.username}, your daily :yen: credits refreshes in \`\`1 Day\`\`.**`);
